@@ -3,7 +3,7 @@ from datetime import timedelta
 from temporalio import workflow
 
 with workflow.unsafe.imports_passed_through():
-    from src.emailing_service_temporal.activities import send_email, EmailPayload, check_user_profile_completed
+    from emailing_service_temporal.activities import send_email, EmailPayload, check_user_profile_completed
 
 @dataclass
 class OnboardingParams:
